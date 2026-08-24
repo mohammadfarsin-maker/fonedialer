@@ -5,7 +5,6 @@ import SmoothScrollProvider from '@/components/animation/SmoothScrollProvider';
 import QueryProvider from '@/components/providers/QueryProvider';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import FloatingCTABar from '@/components/layout/FloatingCTABar';
 import ContactModalPopup from '@/components/contact/ContactModalPopup';
 
 const hankenGrotesk = Hanken_Grotesk({
@@ -93,7 +92,6 @@ export default function RootLayout({
             <Header />
             <main className="pt-20 flex-grow">{children}</main>
             <Footer />
-            <FloatingCTABar />
             <ContactModalPopup />
           </SmoothScrollProvider>
         </QueryProvider>

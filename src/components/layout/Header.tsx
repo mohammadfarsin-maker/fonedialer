@@ -20,18 +20,19 @@ export default function Header() {
     <>
       <header
         id="main-nav"
-        className={`fixed top-0 w-full z-50 bg-gradient-to-r from-[#fcf9f8]/95 via-[#EBF1F9]/60 to-[#fcf9f8]/95 backdrop-blur-md transition-all duration-300 ${isScrolled ? 'shadow-md border-b border-[#133052]/10 py-1' : 'shadow-sm py-2'
-          }`}
+        className={`fixed top-0 w-full z-50 bg-gradient-to-r from-[#fcf9f8]/95 via-[#EBF1F9]/60 to-[#fcf9f8]/95 backdrop-blur-md transition-all duration-300 ${
+          isScrolled ? 'shadow-md border-b border-[#133052]/10 py-1' : 'shadow-sm py-2'
+        }`}
       >
-        <div className="flex justify-between items-center max-w-[1280px] mx-auto px-4 md:px-16 h-22 md:h-24">
-          {/* Brand Logo - Fixed src to /logo.png */}
+        <div className="flex justify-between items-center max-w-[1280px] mx-auto px-4 md:px-16 h-20">
+          {/* Brand Logo - Fixed size for dev & production consistency */}
           <Link href="/" className="flex items-center">
             <Image
               src="/logo.png"
               alt="Fone Dialer Logo"
-              width={250}
-              height={90}
-              className="h-14 md:h-28 max-h-[250px] w-auto object-contain mix-blend-multiply"
+              width={180}
+              height={48}
+              className="h-10 md:h-12 w-auto max-h-12 object-contain mix-blend-multiply"
               priority
             />
           </Link>
@@ -40,25 +41,25 @@ export default function Header() {
           <nav className="hidden md:flex items-center gap-8">
             <Link
               href="/services"
-              className="text-[#43474e] hover:text-[#133052] font-semibold text-base transition-colors duration-300"
+              className="text-[#43474e] hover:text-[#133052] font-semibold text-sm transition-colors duration-300"
             >
               Services
             </Link>
             <Link
               href="/pricing"
-              className="text-[#43474e] hover:text-[#133052] font-semibold text-base transition-colors duration-300"
+              className="text-[#43474e] hover:text-[#133052] font-semibold text-sm transition-colors duration-300"
             >
               Pricing
             </Link>
             <Link
               href="/about"
-              className="text-[#43474e] hover:text-[#133052] font-semibold text-base transition-colors duration-300"
+              className="text-[#43474e] hover:text-[#133052] font-semibold text-sm transition-colors duration-300"
             >
               About
             </Link>
             <Link
               href="/contact"
-              className="text-[#43474e] hover:text-[#133052] font-semibold text-base transition-colors duration-300"
+              className="text-[#43474e] hover:text-[#133052] font-semibold text-sm transition-colors duration-300"
             >
               Contact Us
             </Link>

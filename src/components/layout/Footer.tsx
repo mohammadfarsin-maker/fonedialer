@@ -5,14 +5,14 @@ export default function Footer() {
   return (
     <footer className="py-12 bg-gradient-to-b from-[#fcf9f8] via-[#EBF1F9]/30 to-white border-t border-[#E5E7EB]">
       <div className="max-w-[1280px] mx-auto px-4 md:px-16 flex flex-col md:flex-row items-center justify-between gap-8">
-        {/* Brand Logo - Fixed src to /logo.png */}
+        {/* Brand Logo - Fixed size for dev & production consistency */}
         <Link href="/" className="flex items-center">
           <Image
             src="/logo.png"
             alt="Fone Dialer Logo"
-            width={280}
-            height={90}
-            className="h-14 md:h-24 max-h-[250px] w-auto object-contain mix-blend-multiply"
+            width={180}
+            height={48}
+            className="h-10 md:h-12 w-auto max-h-12 object-contain mix-blend-multiply"
           />
         </Link>
 
